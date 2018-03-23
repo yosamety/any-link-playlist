@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <!-- Libraries -->
+    <script src="Scripts/angular.min.js"></script>
+    <!--<script src="Scripts/jquery-3.2.1.js"></script>-->
+    <!-- Custom functions -->
+    <script src="JS/link.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div id="sire-wrapper">
+        <div id="play-area" class="relative">
+            <div id="control-area">
+
+                <button id="previous-file"><</button>
+                <button id="pause-play">+</button>
+                <button id="next-file">></button>
+            </div>
+
+                <div id="media-area">
+                    <pre id="main-player">
+        <!--<video id="mainmedia" autoplay>-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9-1n3y8p9fM" frameborder="0" gesture="media" allowfullscreen></iframe>
+        <!--</video>-->
+                </pre>
+                </div>
+            </div>
+        <div id="link-area" class="relative">
+            <div>
+                Enter a YouTube URL:
+                <input id="myUrl" type="text" value="http://www.youtube.com/watch?v=zbYf5_S7oJo" />
+            </div>
+            <div>
+                <button id="myBtn" onclick="domain_from_url()">Go</button>
+            </div>
+            <div>
+                Domain Name: <span id="myDomain"></span>
+            </div>
+            <div>
+                Media ID: <span id="myId"></span>
+            </div>
+            <div>
+                Embed code: <pre id="myCode"></pre>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
